@@ -145,7 +145,7 @@ public class ThemeE2ETest {
                 .statusCode(HttpStatus.UNAUTHORIZED.value());
     }
 
-    public Long createTheme(String token) {
+    private Long createTheme(String token) {
         ThemeRequest body = new ThemeRequest("테마이름", "테마설명", 22000);
         String location = RestAssured
                 .given().log().all()
