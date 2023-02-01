@@ -1,5 +1,9 @@
 package nextstep.member;
 
 public enum MemberRole {
-    NORMAL, ADMIN
+    NORMAL, ADMIN;
+
+    public boolean isAdmin() {
+        return this.equals(MemberRole.ADMIN);
+    }
 }

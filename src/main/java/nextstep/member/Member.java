@@ -56,6 +56,6 @@ public class Member {
     }
 
     public boolean hasAdminRole() {
-        return MemberRole.ADMIN.equals(role);
+        return role != null && role.isAdmin();
     }
 }
